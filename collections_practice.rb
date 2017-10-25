@@ -10,3 +10,7 @@ end
 def first_wa(array)
   array.find{|item| item[0,2].upcase == "WA"}
 end
+
+def remove_non_strings(array)
+  array.delete_if?{|item| item.is_a?(String)}
+end
